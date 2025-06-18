@@ -23,10 +23,11 @@ public static class UserEndpoints
             .WithName("GetAllUsers")
             .WithTags("Users");
 
+        // GET /users/{id}
         // TODO: Oppgave 1: skriv et endepunkt for å hente ut riktig bruker
         app.MapGet(
-            "/users/{id}",
-            async (ICvService cvService, Guid id) =>
+            "/users/{id:guid}",
+            async (Guid id, ICvService cvService) =>
             {
                 var user = await cvService.GetUserByIdAsync(id);
                 if (user == null)
