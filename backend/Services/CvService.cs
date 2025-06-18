@@ -13,6 +13,10 @@ public class CvService(AppDbContext context) : ICvService
     }
 
     // TODO: Oppgave 1
+    public async Task<User?> GetUserByIdAsync(Guid id)
+    {
+        return await context.Users.FindAsync(id);
+    }
 
     public async Task<IEnumerable<Experience>> GetAllExperiencesAsync()
     {
