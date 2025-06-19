@@ -7,7 +7,7 @@ export default function MainHeader() {
     <>
       <MainHeaderBackground />
       <header className={classes.header}>
-        <h1 className={classes.title}>Espen Askeladd sin CV</h1>
+        <h1 className={classes.title}>Mille sin CV</h1>
         <div className={classes.nav}>
           <NavLink
             to="/"
@@ -19,8 +19,6 @@ export default function MainHeader() {
             Om meg
           </NavLink>
 
-          {/*TODO Oppgave 1.2: Legg til Erfaringer i `MainHeader.tsx` som en ny tab */}
-
         <NavLink
             to="/experiences"
             className={({ isActive }) =>
@@ -30,7 +28,6 @@ export default function MainHeader() {
           >
             Erfaringer
           </NavLink>
-
         </div>
       </header>
     </>

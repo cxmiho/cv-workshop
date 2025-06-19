@@ -6,7 +6,6 @@ import { useExperiences } from "../hooks/useExperiences";
 import { ExperienceCard } from "../components/experiences/ExperienceCard";
 
 export default function Experiences() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [selectedExperience, setSelectedExperience] = useState<string | null>(
     null
   );
