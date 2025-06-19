@@ -34,8 +34,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
         </p>
         <p className={styles.keyInfo}>
           <CxIcon name="location" size="4" />{" "}
-          {/* TODO Oppgave 6.1: Conditional rendering*/}
-          {experience.company}
+          {experience.company || "Selvstendig arbeid"}
         </p>
         <p className={styles.eventTitle}>{experience.title}</p>
       </div>
